@@ -12,6 +12,14 @@ CLI tool that allows you to save a note with a single CLI command!
 Successfuly saved the note!
 ```
 
+## Build
+
+Until I didn't add pre-built binaries, you need to build a binary yourself :bow:
+
+1) Download the repo
+2) Run `cargo build --release`
+3) Move the binary `target/release/note` to a folder in your $PATH
+
 ## Configuration
 
 Create config file at $HOME_DIR/.notes/Settings.toml with the list of available topics and corresponding text files (any text format is supported: `.txt`, `.md`, etc)
