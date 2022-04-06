@@ -28,3 +28,24 @@ Create config file at $HOME_DIR/.notes/Settings.toml with the list of available 
 2read = "/home/stepan/Files/notes/2read.md"
 thoughts = "/home/stepan/Files/notes/thoughts.md"
 ```
+
+## Usage
+
+* Save the note
+
+```
+note -t read "Rust Book"
+```
+
+* See all topics
+
+```
+note topics
+```
+
+* List of available commands with info
+
+```
+note --help
+```
+
