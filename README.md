@@ -7,7 +7,7 @@ Here will be logo, maybe.
 CLI tool that allows you to save a note with a single CLI command!
 
 ```sh
-> note --topic 2read War & Peace by L. Tolstoy
+> note --topic 2read "War & Peace by L. Tolstoy"
 
 Successfuly saved the note!
 ```
