@@ -27,6 +27,9 @@ Create config file at $HOME_DIR/.notes/Settings.toml with the list of available 
 [topic]
 2read = "/home/stepan/Files/notes/2read.md"
 thoughts = "/home/stepan/Files/notes/thoughts.md"
+
+[general]
+editor = "nvim"
 ```
 
 ## Usage
