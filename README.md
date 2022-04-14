@@ -4,10 +4,10 @@ Here will be logo, maybe.
 
 ## What is it
 
-CLI tool that allows you to save a note with a single CLI command!
+CLI tool that allows you to save a note with a single command!
 
 ```sh
-> note --topic 2read "War & Peace by L. Tolstoy"
+> note --topic 2read "Rust Book"
 
 Successfuly saved the note!
 ```
@@ -19,15 +19,19 @@ Successfuly saved the note!
 
 ## Configuration
 
-Create config file at $HOME_DIR/.notes/Settings.toml with the list of available topics and corresponding text files (any text format is supported: `.txt`, `.md`, etc)
+Create config file at $HOME_DIR/.note/Settings.toml with the list of available topics and corresponding text files (any text format is supported: `.txt`, `.md`, etc)
 
-`Settings.toml`
+### Paths to files
 
 ```toml
 [topic]
 2read = "/home/stepan/Files/notes/2read.md"
 thoughts = "/home/stepan/Files/notes/thoughts.md"
+```
 
+### (Optional) Text editor to use
+
+```toml
 [general]
 editor = "nvim"
 ```
@@ -39,6 +43,13 @@ editor = "nvim"
 ```
 note -t read "Rust Book"
 ```
+
+* Leave the note empty to prompt for an external editor
+
+```
+note -t read
+```
+
 
 * See all topics
 

@@ -7,6 +7,6 @@ edition = "2021"
 
 [dependencies]
 clap = { version = "3.0.4", features = ["derive"] }
-config = { version = "0.11.0", featurs = ["toml"] }
+config = { version = "0.11.0", features = ["toml"] }
 edit = "0.1.3"
 dirs = "4.0"
