@@ -18,7 +18,7 @@ fn set_editor(editor: Option<String>) -> impl Fn() -> () {
 fn main() {
     let mut settings = Config::new();
     let mut settings_file = home_dir().expect("no home in system");
-    settings_file.push(".notes/Settings.toml");
+    settings_file.push(".note/Settings.toml");
     let add_settings_res = settings.merge::<File<FileSourceFile>>(settings_file.into());
     if add_settings_res.is_err() { println!("Cannot find the config, the program might not work as expected")};
 
