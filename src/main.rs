@@ -58,7 +58,7 @@ fn main() {
                                 println!("Nothing to save");
                                 return;
                             }
-                            text
+                            text.strip_suffix("\n").unwrap_or(&text).to_string()
                         },
                         Err(_) => {
                             println!("Nothing to save");
@@ -74,7 +74,6 @@ fn main() {
                 .write(true)
                 .open(path)
                 .expect("Cannot open the file for writing");
-
             writeln!(file, "{}", text_to_write).expect("Cannot write to the file");
             revert_editor();
             println!("Succesfuly saved the note!");
