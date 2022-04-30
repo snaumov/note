@@ -57,6 +57,12 @@ note -t read
 note topics
 ```
 
+* Use `--prepend` (`-p`) flag to prepend the notes instead of appending to an end of file.
+
+```
+note -p
+```
+
 * List of available commands with info
 
 ```
